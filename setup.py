@@ -5,8 +5,8 @@ PLUGIN_NAME = "my_loan_plugin"
 setuptools.setup(
     name=PLUGIN_NAME,
     version="1.0.0",
-    author="Your Name",
-    author_email="your.email@example.com",
+    author="Jan Schüler",
+    author_email="",
     description="A plugin to manage item loans in InvenTree",
     packages=setuptools.find_packages(),
     include_package_data=True,

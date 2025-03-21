@@ -31,8 +31,9 @@ class MyLoanPlugin(
     # --- NavigationMixin ---
     def nav_bar_entries(self, request):
         """
-        Return a list of tuples (entry_name, url) for the left navigation bar.
+        Test
         """
+        logger.info("MyLoanPlugin: Generating navigation entry")
         return [("Item Loans", self.plugin_url())]
 
     # --- UrlsMixin ---

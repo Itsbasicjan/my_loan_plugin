@@ -1,0 +1,9 @@
+/* my_loan_plugin/static/my_loan_plugin/loan.css */
+
+table {
+    border-collapse: collapse;
+  }
+  table, th, td {
+    border: 1px solid #000;
+  }
+  

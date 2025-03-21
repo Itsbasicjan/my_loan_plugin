@@ -1,0 +1,14 @@
+<!-- my_loan_plugin/templates/my_loan_plugin/loan_agreement.html -->
+<html>
+<head>
+    <title>Loan Agreement</title>
+</head>
+<body>
+    <h2>Loan Agreement #{{ loan.id }}</h2>
+    <p>Borrower: {{ loan.borrower }}</p>
+    <p>Item: {{ loan.stock_item }}</p>
+    <p>Loan Start: {{ loan.loan_start }}</p>
+    <p>Loan End: {{ loan.loan_end }}</p>
+    <p>Status: {{ loan.status }}</p>
+</body>
+</html>

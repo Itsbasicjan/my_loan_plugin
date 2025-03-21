@@ -1,0 +1,4 @@
+# MANIFEST.in
+recursive-include my_loan_plugin/templates *
+recursive-include my_loan_plugin/static *
+include README.md

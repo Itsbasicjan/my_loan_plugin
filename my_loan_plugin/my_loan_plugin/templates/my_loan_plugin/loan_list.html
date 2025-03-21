@@ -1,0 +1,36 @@
+<!-- my_loan_plugin/templates/my_loan_plugin/loan_list.html -->
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<h1>Active Loans</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Stock Item</th>
+      <th>Borrower</th>
+      <th>Status</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for loan in loans %}
+    <tr>
+      <td>{{ loan.id }}</td>
+      <td>{{ loan.stock_item }}</td>
+      <td>{{ loan.borrower }}</td>
+      <td>{{ loan.status }}</td>
+      <td>
+        {% if loan.status != "returned" %}
+        <a href="{% url 'plugin:my_loan_plugin:loan-return' loan.id %}">Mark Returned</a>
+        {% endif %}
+      </td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+
+<a href="{% url 'plugin:my_loan_plugin:loan-request' %}">Request New Loan</a>
+{% endblock %}

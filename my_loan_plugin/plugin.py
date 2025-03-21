@@ -11,7 +11,7 @@ class MyLoanPlugin(
     InvenTreePlugin
 ):
     """
-    Custom InvenTree plugin for managing item loans.-
+    Custom InvenTree plugin for managing item loans.
     """
 
     NAME = "my_loan_plugin"
